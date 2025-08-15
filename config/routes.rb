@@ -6,8 +6,10 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   # Defines the root path route ("/")
+  root to: 'lists#index'
   # root "posts#index"
   resources :lists, only: [:index, :show, :new] do
-
+  # add the bookmark roots too
+  # take a look at the slack
   end
  end
