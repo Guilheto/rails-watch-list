@@ -13,8 +13,17 @@ class ListsController < ApplicationController
   end
 
   def create
-    @list = Lists.new(params[:list])
-    @list.save
+    @list = Lists.new(list_params)
+    if @list.save
+      redirect_to lists_path
+    else
+      render 'new', status: :unprocessable_content
+    end
   end
+end
 
+private
+
+def list_params
+  params.require(:list).permit(:name, :photo)
 end
