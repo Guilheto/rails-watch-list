@@ -1,16 +1,29 @@
-
-<div class="banner" style="background-image: url(<%= asset_path("happy-gilmore-carl-weathers-adam-sandler.avif") %>)">
-  <h1>Welcome to Watch list</h1>
-  </div>
-<div class="container mt-3">
+<div class="banner">
+    <h1>Kenji Sakamoto</h1>
+    <p>UI/UX Designer from Japan specialized in web and mobile application</p>
+  <img class="banner-img" src="<%= asset_path("DSCF7158.png") %>">
+</div>
+<div class="introduction-section">
+    <div class="text-box">
+      <h2>Hi Welcome to my portfolio</h2>
+      <p>I am a design enthusiast</p>
+      <p>Recently graduated from Le Wagon and this is my first Portfolio Page using everything I have learnt over the course of 2 month.</p>
+    </div>
+    <%# profile pic %>
+  <img class="image-icon" src="<%= asset_path("IMG_2203 (1).JPG") %>">
+</div>
+<div class="card-container">
+  <%# Projects %>
+  <h2>Projects</h2>
   <div class="cards">
     <% @lists.each do |list| %>
       <%= link_to list_path(list) do  %>
-        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://image.pollinations.ai/prompt/<%= list.name %>-movie);">
+        <div class="card-category">
           <%= list.name %>
         </div>
       <% end %>
     <% end %>
-    <%= link_to "new lists", new_list_path %>
+    <%# <%= link_to "new lists", new_list_path %>
   </div>
 </div>
+<%# Work on the cards fonts and work on figma %>

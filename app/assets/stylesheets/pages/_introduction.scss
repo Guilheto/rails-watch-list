@@ -1,0 +1,42 @@
+.introduction-section {
+  height: 300px;
+  background-color: #0d2d83;
+  position: relative;
+
+  .text-box{
+    width: 60%;
+    color:#ffc65a;
+    padding-top: 20px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+
+  .image-icon {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    position: absolute;
+    object-fit: cover;
+    right: 30px;
+    top: -60px;
+  }
+
+  h2{
+    color:#ffc65a;
+    font-size: 38px;
+    font-weight: 400;
+    margin-left: 4%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  p{
+    color:#ffc65a;
+    font-size: 18px;
+    font-weight:200;
+    margin-left: 3%;
+    padding: 2px;
+    text-align: start;
+  }
+}

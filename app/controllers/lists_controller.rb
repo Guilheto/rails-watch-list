@@ -20,6 +20,12 @@ class ListsController < ApplicationController
       render 'new', status: :unprocessable_content
     end
   end
+
+  def destroy
+    @list = List.find(params[:id])
+    @list.destroy
+    redirect_to lists_path
+  end
 end
 
 private

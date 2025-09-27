@@ -1,5 +1,8 @@
+<%= javascript_importmap_tags %>
 <h1>This is show page</h1>
  <h1><%= @list.name %></h1>
   <%= link_to "back to lists", lists_path %>
+<%# <%= link_to "Delete", list_path(@list),
+  data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }%>
 <%# <%= @movies.title%>
 <%# #arruma aqui %>
