@@ -1,29 +1,61 @@
-<div class="banner">
+<div class="container-fluid p-0">
+  <div class="banner position-relative">
+    <img class="banner-img img-fluid w-100" src="<%= asset_path("DSCF7158.png") %>">
     <h1>Kenji Sakamoto</h1>
     <p>UI/UX Designer from Japan specialized in web and mobile application</p>
-  <img class="banner-img" src="<%= asset_path("DSCF7158.png") %>">
-</div>
-<div class="introduction-section">
-    <div class="text-box">
-      <h2>Hi Welcome to my portfolio</h2>
-      <p>I am a design enthusiast</p>
-      <p>Recently graduated from Le Wagon and this is my first Portfolio Page using everything I have learnt over the course of 2 month.</p>
+  </div>
+
+  <div class="introduction-section">
+    <div class="container py-2">
+      <div class="row align-items-center">
+      <div class="col-12 col-md-4 text-center mt-4 mt-md-0">
+        <img class="image-icon img-fluid rounded-circle shadow" src="<%= asset_path("IMG_2203 (1).JPG") %>">
+      </div>
+        <div class="col-12 col-md-8">
+          <div class="text-box">
+              <h2>Hi Welcome to my portfolio</h2>
+              <p>I am a design enthusiast</p>
+              <p>Recently graduated from Le Wagon and this is my first Portfolio Page using everything I have learnt over the course of 2 month.</p>
+            </div>
+          </div>
+        <%# profile pic %>
+      </div>
     </div>
-    <%# profile pic %>
-  <img class="image-icon" src="<%= asset_path("IMG_2203 (1).JPG") %>">
-</div>
-<div class="card-container">
+  </div>
+
+  <%# technologies %>
+  <%# list of technologies that you use with icons %>
+  <div class="technologies px-4 py-2">
+     <h2>Technologies</h2>
+  </div>
+
   <%# Projects %>
-  <h2>Projects</h2>
-  <div class="cards">
-    <% @lists.each do |list| %>
-      <%= link_to list_path(list) do  %>
-        <div class="card-category">
-          <%= list.name %>
+  <div class="card-container px-4 py-2">
+    <h2 class="mb-4">Projects</h2>
+    <div class="cards">
+      <% @lists.each do |list| %>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+          <%= link_to list_path(list) do  %>
+            <div class="card-category mb-4 p-4">
+              <h2 class="mb-4"><%= list.name %></h2>
+              <p><%= list.description %></p>
+            </div>
+          <% end %>
         </div>
       <% end %>
-    <% end %>
-    <%# <%= link_to "new lists", new_list_path %>
+      <%# <%= link_to "new lists", new_list_path %>
+    </div>
   </div>
+  <%# extra %>
+  <div class="extra px-4 py-2">
+     <h2>extra</h2>
+  </div>
+  <%# create a new root to page that shows what you do for fun %>
+
+  <%# contact %>
+  <div class="contact px-4 py-2">
+     <h2>contact</h2>
+  </div>
+  <%# just a page showing email, linkedin and your linkedin %>
 </div>
-<%# Work on the cards fonts and work on figma %>
+  <%# Work on the cards fonts and work on figma %>

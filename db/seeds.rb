@@ -3,9 +3,17 @@
 # The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
 #
 # Example:
-Movie.create(title: "The Shawshank Redemption", overview: "Framed in the 1940s for double murder, upstanding banker Andy Dufresne begins a new life at the Shawshank prison", poster_url: "https://image.tmdb.org/t/p/original/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg", rating: 8.7)
-Movie.create(title: "Titanic", overview: "101-year-old Rose DeWitt Bukater tells the story of her life aboard the Titanic.", poster_url: "https://image.tmdb.org/t/p/original/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg", rating: 7.9)
-Movie.create(title: "Ocean's Eight", overview: "Debbie Ocean, a criminal mastermind, gathers a crew of female thieves to pull off the heist of the century.", poster_url: "https://image.tmdb.org/t/p/original/MvYpKlpFukTivnlBhizGbkAe3v.jpg", rating: 7.0)
-List.create(name: "Petspot")
-List.create(name: "Robobo")
-List.create(name: "Photo Portfolio")
+List.destroy_all
+
+List.create(
+  name: "Petspot",
+  description: "An app to find dog friendly places in Tokyo."
+)
+List.create(
+  name: "Robobo",
+  description: "A Japanese translator app using AI to teach you real conversation Japanese."
+)
+List.create(
+  name: "Photo Portfolio",
+  description: "My Photography portfolio"
+)
