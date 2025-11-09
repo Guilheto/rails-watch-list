@@ -1,38 +1,47 @@
+<link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 <div class="container-fluid p-0">
   <div class="banner position-relative">
     <img class="banner-img img-fluid w-100" src="<%= asset_path("DSCF7158.png") %>">
     <h1>Kenji Sakamoto</h1>
     <p>UI/UX Designer from Japan specialized in web and mobile application</p>
   </div>
-
   <div class="introduction-section">
     <div class="container py-2">
       <div class="row align-items-center">
-      <div class="col-12 col-md-4 text-center mt-4 mt-md-0">
-        <img class="image-icon img-fluid rounded-circle shadow" src="<%= asset_path("IMG_2203 (1).JPG") %>">
-      </div>
+        <div class="col-12 col-md-4 text-center mt-4 mt-md-0">
+          <img class="image-icon img-fluid rounded-circle shadow" src="<%= asset_path("IMG_2203 (1).JPG") %>">
+        </div>
         <div class="col-12 col-md-8">
           <div class="text-box">
-              <h2>Hi Welcome to my portfolio</h2>
-              <p>I am a design enthusiast</p>
-              <p>Recently graduated from Le Wagon and this is my first Portfolio Page using everything I have learnt over the course of 2 month.</p>
-            </div>
+            <h2>Hi Welcome to my portfolio</h2>
+            <p>I am a design enthusiast</p>
+            <p>Recently graduated from Le Wagon and this is my first Portfolio Page using everything I have learnt over the course of 2 month.</p>
           </div>
+        </div>
         <%# profile pic %>
       </div>
     </div>
   </div>
-
   <%# technologies %>
   <%# list of technologies that you use with icons %>
-  <div class="technologies px-4 py-2">
-     <h2>Technologies</h2>
-     <i class="fa-brands fa-html5"></i>
-     <i class="fa-brands fa-css"></i>
-     <i class="fa-brands fa-square-figma"></i>
-
+  <div class="technologies px-4 py-2 text-center">
+    <h2>Technologies</h2>
+    <div class="technologies-container row mb-4 p-4">
+      <!-- Row 1: 5 icons on small/medium screens -->
+      <div class="col-4 col-md-auto col-lg-auto"><i class="devicon-ruby-plain colored"></i></div>
+      <div class="col-4 col-md-auto col-lg-auto"><i class="devicon-rails-plain colored"></i></div>
+      <div class="col-4 col-md-auto col-lg-auto"><i class="devicon-html5-plain colored"></i></div>
+      <div class="col-4 col-md-auto col-lg-auto"><i class="devicon-css3-plain colored"></i></div>
+      <div class="col-4 col-md-auto col-lg-auto"><i class="devicon-bootstrap-plain colored"></i></div>
+      <!-- break only on small/medium screens -->
+      <div class="w-100 d-none d-md-block d-lg-none"></div>
+      <!-- Row 2: 4 icons -->
+      <div class="col-4 col-md-auto col-lg-auto"><i class="devicon-figma-plain colored"></i></div>
+      <div class="col-4 col-md-auto col-lg-auto"><i class="devicon-github-original colored"></i></div>
+      <div class="col-4 col-md-auto col-lg-auto"><i class="devicon-git-plain"></i></div>
+      <div class="col-4 col-md-auto col-lg-auto"><i class="devicon-heroku-original colored"></i></div>
+    </div>
   </div>
-
   <%# Projects %>
   <div class="card-container px-4 py-2">
     <h2 class="mb-4">Projects</h2>
@@ -51,15 +60,20 @@
     </div>
   </div>
   <%# extra %>
-  <div class="extra px-4 py-2">
+  <%# <div class="extra px-4 py-2">
      <h2>extra</h2>
-  </div>
+  </div> %>
   <%# create a new root to page that shows what you do for fun %>
-
   <%# contact %>
   <div class="contact px-4 py-2">
-     <h2>contact</h2>
+    <div class="contact-section">
+      <p>Get in contact</p>
+      <p>guilherme@gmail.com</p>
+    </div>
+    <div class="icons">
+      <i class="devicon-linkedin-plain"></i>
+      <i class="devicon-github-original"></i>
+    </div>
   </div>
-  <%# just a page showing email, linkedin and your linkedin %>
 </div>
-  <%# Work on the cards fonts and work on figma %>
+<%# Work on the cards fonts and work on figma %>
