@@ -11,7 +11,7 @@
         <div class="col-12 col-md-4 text-center mt-4 mt-md-0">
           <img class="image-icon img-fluid rounded-circle shadow" src="<%= asset_path("IMG_2203 (1).JPG") %>">
         </div>
-        <div class="col-12 col-md-8">
+        <div class="col-12 col-md-8 pt-4 pt-md-2">
           <div class="text-box">
             <h2>Hi Welcome to my portfolio</h2>
             <p>I am a design enthusiast</p>
@@ -42,44 +42,125 @@
       <div class="col-4 col-md-auto col-lg-auto"><i class="devicon-heroku-original colored"></i></div>
     </div>
   </div>
-  <%# Projects %>
+  <%# Projects Projects Projects Projects Projects Projects Projects Projects Projects %>
   <div class="card-container px-4 py-2">
     <h2 class="mb-4">Projects</h2>
     <div class="cards">
-      <% @lists.each do |list| %>
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-          <%= link_to list_path(list) do  %>
-            <div class="card-category mb-4 p-4">
-              <h2 class="mb-4"><%= list.name %></h2>
-              <p><%= list.description %></p>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="card-category mb-4 p-4">
+          <h2>Pet Spot</h2>
+          <p>An app to find and share dog friendly places around Tokyo</p>
+          <div class="container py-2">
+            <div class="row">
+              <div class="col-md-6">
+                <img class="banner-img img-fluid" src="<%= asset_path("Screenshot 2026-01-06 at 14.37.22.png") %>">
+              </div>
+              <div class="col-md-6">
+                <div class="role-text">
+                  <h3>Role:</h3>
+                  <p>UI/UX of the app: Color, usability, user flow, buttons, bars, texts and functionality</p>
+                  <h3>Technologies:</h3>
+                  <div class="technologies-container row mb-4 p-4">
+                    <div class="col-4 col-md-auto col-lg-auto"><i class="devicon-rails-plain colored"></i></div>
+                    <div class="col-4 col-md-auto col-lg-auto"><i class="devicon-html5-plain colored"></i></div>
+                    <div class="col-4 col-md-auto col-lg-auto"><i class="devicon-css3-plain colored"></i></div>
+                    <div class="col-4 col-md-auto col-lg-auto"><i class="devicon-bootstrap-plain colored"></i></div>
+                    <div class="col-4 col-md-auto col-lg-auto"><i class="devicon-figma-plain colored"></i></div>
+                    <div class="col-4 col-md-auto col-lg-auto"><i class="devicon-github-original colored"></i></div>
+                    <div class="col-4 col-md-auto col-lg-auto"><i class="devicon-git-plain"></i></div>
+                    <div class="col-4 col-md-auto col-lg-auto"><i class="devicon-heroku-original colored"></i></div>
+                  </div>
+                </div>
+              </div>
             </div>
-          <% end %>
-        </div>
-      <% end %>
-      <%# <%= link_to "new lists", new_list_path %>
-    </div>
-  </div>
-  <%# extra %>
-  <%# <div class="extra px-4 py-2">
-     <h2>extra</h2>
-  </div> %>
-  <%# create a new root to page that shows what you do for fun %>
-  <%# contact %>
-  <div class="contact">
-    <div class="container-fluid">
-      <div class="p-2-5 d-flex justify-content-between align-items-center">
-        <div class="contact-section flex-wrap">
-          <div class="d-flex gap-2">
-            <p>Get in contact</p>
-            <a class="mail" href="mailto:kenjisakamoto0506@gmail.com"> kenjisakamoto0506@gmail.com</a>
           </div>
         </div>
-        <div class="icons">
-          <i class="devicon-linkedin-plain"></i>
-          <i class="devicon-github-original"></i>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="card-category mb-4 p-4">
+          <h2>Robobo</h2>
+          <p>Translator app focused on Japanese Language using AI to give the context accurate and commonly used Japanese sentences</p>
+          <div class="container py-2">
+            <div class="row">
+              <div class="col-md-6">
+                <img class="banner-img img-fluid" src="<%= asset_path("Screenshot 2026-01-06 at 19.11.22.png") %>">
+              </div>
+              <div class="col-md-6">
+                <div class="role-text">
+                  <h3>Role:</h3>
+                  <p>UI/UX of the app: Color, usability, user flow, buttons, bars, texts, functionality and prompts</p>
+                  <h3>Technologies:</h3>
+                  <div class="technologies-container row mb-4 p-4">
+                    <div class="col-4 col-md-auto col-lg-auto"><i class="devicon-rails-plain colored"></i></div>
+                    <div class="col-4 col-md-auto col-lg-auto"><i class="devicon-html5-plain colored"></i></div>
+                    <div class="col-4 col-md-auto col-lg-auto"><i class="devicon-css3-plain colored"></i></div>
+                    <div class="col-4 col-md-auto col-lg-auto"><i class="devicon-bootstrap-plain colored"></i></div>
+                    <div class="col-4 col-md-auto col-lg-auto"><i class="devicon-figma-plain colored"></i></div>
+                    <div class="col-4 col-md-auto col-lg-auto"><i class="devicon-github-original colored"></i></div>
+                    <div class="col-4 col-md-auto col-lg-auto"><i class="devicon-git-plain"></i></div>
+                    <div class="col-4 col-md-auto col-lg-auto"><i class="devicon-heroku-original colored"></i></div>
+                    <div class="col-4 col-md-auto col-lg-auto"><i class="devicon-azure-plain colored"></i></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="card-category mb-4 p-4">
+          <h2>Photography Portfolio</h2>
+          <p>My photography portfolio made using HTML & CSS</p>
+          <div class="container py-2">
+            <div class="row">
+              <div class="col-md-6">
+                <img class="banner-img img-fluid" src="<%= asset_path("Kenji_s Photo Portfolio.jpeg") %>">
+              </div>
+              <div class="col-md-6">
+                <div class="role-text">
+                  <h3>Role:</h3>
+                  <p>UI/UX of the app: Color, usability, user flow, texts, functionality and images</p>
+                  <h3>Technologies:</h3>
+                  <div class="technologies-container row mb-4 p-4">
+                    <div class="col-4 col-md-auto col-lg-auto"><i class="devicon-html5-plain colored"></i></div>
+                    <div class="col-4 col-md-auto col-lg-auto"><i class="devicon-css3-plain colored"></i></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
+  <%# contact %>
+<div class="contact">
+  <div class="container-fluid">
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 py-3">
+
+      <!-- Contact text -->
+      <div class="d-flex flex-column flex-md-row align-items-center gap-2 text-center text-md-start">
+        <p class="mb-0">Get in contact:</p>
+        <a class="mail" href="mailto:kenjisakamoto0506@gmail.com">
+          kenjisakamoto0506@gmail.com
+        </a>
+      </div>
+
+      <!-- Icons -->
+      <div class="d-flex gap-3">
+        <a href="#" aria-label="LinkedIn">
+          <i class="devicon-linkedin-plain fs-4"></i>
+        </a>
+        <a href="#" aria-label="GitHub">
+          <i class="devicon-github-original fs-4"></i>
+        </a>
+      </div>
+
+    </div>
+  </div>
 </div>
-<%# Work on the cards fonts and work on figma %>

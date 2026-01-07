@@ -1,15 +1,15 @@
 .technologies{
-  background-color: #0d2d83;
+  background-color: $white;
 
   h2{
     margin-left: 4%;
-    color:#ffac0b;
+    color: $black;
     font-size: 40px;
     font-weight: 500;
     }
 
   .technologies-container{
-    background-color: #fff1d6;
+    background-color: $white;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
